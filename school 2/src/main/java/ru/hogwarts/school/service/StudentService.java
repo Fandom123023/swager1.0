@@ -1,14 +1,13 @@
-package service;
+package ru.hogwarts.school.service;
 
-import model.Student;
-import org.springframework.stereotype.Service;
-import repository.StudentRepository;
+import ru.hogwarts.school.model.Student;
+import ru.hogwarts.school.repository.StudentRepository;
 
 import java.util.List;
 
 public class StudentService {
     private final StudentRepository studentRepository;
-    private StudentRepository;
+
 
     public StudentService(StudentRepository studentRepository){
         this.studentRepository = studentRepository;

@@ -1,8 +1,9 @@
-package model;
+package ru.hogwarts.school.model;
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
-import javax.annotation.processing.Generated;
 import java.util.Objects;
 
 @EntityScan
@@ -43,9 +44,7 @@ public class Student {
                 '}';
     }
 
-    public long getId() { 
-        return id;
-    }
+    public long getId() {return id;}
 
     public void setId(long id) {
         this.id = id;

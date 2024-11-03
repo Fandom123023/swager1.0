@@ -1,8 +1,8 @@
-package service;
+package ru.hogwarts.school.service;
 
-import model.Faculty;
+import ru.hogwarts.school.model.Faculty;
 import org.springframework.stereotype.Service;
-import repository.FacultyRepository;
+import ru.hogwarts.school.repository.FacultyRepository;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class FacultyService {
         this.facultyRepository = facultyRepository;
     }
 
-    public Faculty addFaculty(Faculty, faculty){
+    public Faculty addFaculty(Faculty faculty){
         return facultyRepository.save(faculty);
     }
     public Faculty findFaculty(Long id) {

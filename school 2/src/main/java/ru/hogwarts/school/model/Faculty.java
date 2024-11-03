@@ -1,7 +1,9 @@
-package model;
+package ru.hogwarts.school.model;
 
 import java.util.Objects;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 @Entity
 public class Faculty {
@@ -20,7 +22,7 @@ public class Faculty {
         this.color = color;
     }
     @Override
-    public boolean equals(Object a){
+    public boolean equals(Object o){
         if (this == o)
             return true;
         if (o == null || getClass() != o.getClass())
@@ -67,3 +69,4 @@ public class Faculty {
         this.id = id;
     }
 }
+

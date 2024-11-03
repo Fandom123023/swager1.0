@@ -1,4 +1,4 @@
-package controller;
+package ru.hogwarts.school.controller;
 
 
 import org.springframework.http.HttpStatus;
@@ -63,3 +63,4 @@ public class StudentController {
         }
         return ResponseEntity.ok(Collections.emptyList());
     }
+}
