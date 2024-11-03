@@ -34,7 +34,6 @@ public class StudentController {
         }
         return ResponseEntity.ok(student);
     }
-
     @PostMapping
     public Student createStudent(@RequestBody Student student) {
         return studentService.addStudent(student);
